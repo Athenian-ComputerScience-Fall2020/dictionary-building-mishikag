@@ -11,8 +11,8 @@ while True:
         break
     pet_names.update({key:value})
 
-for key_name, value_name in pet_names.items():
-    print(pet_names)
+for key, value in pet_names.items():
+    print(key, ' : ', value)
 
 if key=="quit":
     print(pet_names)
