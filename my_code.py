@@ -12,7 +12,7 @@ while True:
     pet_names.update({key:value})
 
 for key, value in pet_names.items():
-    print(key, ' : ', value)
+    print(key, ':', value)
 
 if key=="quit":
     print(pet_names)
