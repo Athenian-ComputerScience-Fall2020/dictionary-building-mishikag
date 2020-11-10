@@ -5,19 +5,14 @@ pet_names = {}
 while True:
     key = input("please enter a key ")
     if key == "quit":
+        end = True
         break
     value = input("please enter a value ")
     if value == "quit":
+        end = True
         break
     pet_names.update({key:value})
 
-for key, value in pet_names.items():
-    print(key, ':', value)
-
-if key=="quit":
-    print(pet_names)
-    print("okay you are done")
-
-
-
-
+if end == True:
+    for key, value in pet_names.items():
+        print(key, ':', value)
